@@ -35,12 +35,5 @@ data_sample_4 = data_sample_4 %>%
 describe(data_sample_3)
 table(data_sample_3$location)
 
-
-data_sample_3 %>% 
-  ggplot() +
-  aes(x = pain, 
-      sex) +
-  geom_point(aes(colour = class), size = 4) +
-  geom_smooth(method = "lm", se = F, fullrange = TRUE)
          
          
